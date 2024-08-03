@@ -373,7 +373,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px) {
     #header{
-        background-image: url(image/profile\ \(2\).jpg);
+        background-image: url(image/mob.jpg);
     }
     .header-text{
         margin-top: 100%;
