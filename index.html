@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/a521d841e1.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<!-- --------------Home Page --------------- -->
+	
+		<div id="header">
+			<div class="container">
+				<nav>
+					<h1 class="logo">mahesh</h1>
+					<ul id="side-menu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i class="fas fa-times" onclick="closemenu()"></i>
+					</ul>
+					<i class="fas fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="header-text">
+					<p>Full Stack Developer</p>
+					<h1>Hi, I'm <span>Mahesh</span> Khatik, <br> From India</h1>
+				</div>
+			</div>
+		</div>
+
+	<!-- -----------------------------------About---------------------------- -->
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="image/profile.jpg" alt="Profile Picture" >
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>Highly motivated and dedicated B.Tech student in Artificial Intelligence and Data Science with a strong foundation in data
+						analysis, machine learning, deep learning, and full-stack development. Seeking an internship or job opportunity to apply
+						my skills and gain industry experience, while contributing to the success of the organization.</p>
+					
+					<div class="tab-title">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experiance')">Project</p>
+						<div class="tab-links" onclick="opentab('education')">Education</div>
+					</div>
+
+					<div class="tab-contents  active-tab" id="skills">
+						<ul>
+							<li><span>Full Stack Developer</span><br>Designing Websites</li>
+							<li><span>Data Analytics</span><br>Data Cleaning, Gnthering Insights,Vizualization</li>
+							<li><span>Flask</span><br>Model Deployment</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experiance">
+						<ul>
+							<li><span>Twitter Sentiment Analysis</span><br>Python, Data Analysis, Machine Learning, Flask</li>
+							<li><span>Tribute Page </span><br>HTML, CSS</li>
+							<li><span>Portfolio Website</span><br>HTML, CSS, JavaScript</li>
+						</ul>
+					</div>
+					<div class="tab-contents " id="education">
+						<ul>
+							<li><span>SSC</span><br>Jijamata Madhyamic Vidyalay, Bhenda <br> Percentage :- 77.60% <br>Completion:- 2018</li>
+							<li><span>HSC</span><br>Jijamata Junior College, Bhenda<br> Percentage :- 60% <br>Completion:- 2020</li>
+							<li><span>Diploma in Computerr Engineering</span><br>Pimpri Chinchwad Polytechnic, Pune<br> Percentage :- 78.29% <br>Completion:- 2022</li>
+							<li><span>B-Tech Artificial Intelligence and Data Science</span><br>Fabtech College of Engineering and Research, Sangole<br> Pursuing</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -----------------------Services-------------------------------- -->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Website Design</h2>
+					<p>As a web designer, I strive to create visually appealing and highly functional websites that provide an excellent user experience.</p>
+					<a href="#">Learn More..</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-crop"></i>
+					<h2>Data Analytics</h2>
+					<p>With a strong foundation in data analytics, I specialize in transforming raw data into actionable insights that drive decision-making and business growth.</p>
+					<a href="https://github.com/MaheshDataWizard/disease-prediction-data-analytics.git">Learn More..</a>
+				</div>
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>Machine Learning</h2>
+					<p>My expertise in machine learning enables me to develop intelligent systems that learn from data, identify patterns, and make predictions.</p>
+					<a href="https://github.com/MaheshDataWizard/Twitter-Sentiment-Analysis.git">Learn More..</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -----------------------------Portfolio--------------------------- -->
+	 <div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="/image/work-w.jpg" alt="">
+					<div class="layer">
+						<h3>Portfolio Website</h3>
+						<p>Welcome to my portfolio website, a showcase of my skills, projects, and professional journey. This site is designed to provide a comprehensive view of my expertise in web design, data analytics, and machine learning. </p>
+						<a href="https://github.com/MaheshDataWizard/portfolio-website.git"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="/image/teamwork.jpg" alt="">
+					<div class="layer">
+						<h3>Disease Prediction</h3>
+						<p>In this project, I developed a comprehensive data analytics solution to predict diseases, leveraging various data processing, statistical analysis, and machine learning techniques.</p>
+						<a href="https://github.com/MaheshDataWizard/disease-prediction-data-analytics.git"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="/image/desktops.jpg" alt="">
+					<div class="layer">
+						<h3>Twitter Sentiment Analysis</h3>
+						<p>In this project, I developed a Twitter sentiment analysis tool to gauge public sentiment on various topics by analyzing tweets. This project demonstrates my skills in natural language processing, data analysis, and machine learning, as well as my ability to create interactive web applications.</p>
+						<a href="https://github.com/MaheshDataWizard/Twitter-Sentiment-Analysis.git"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href="https://www.github.com/MaheshDataWizard/" class="btn">See More</a>
+		</div>
+	 </div>
+
+	 <!-- -------------------------Contact------------------------
+	-->
+
+	<div id="contact">
+		<div class="container">
+			<div class="row"> 	
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-regular fa-envelope"></i>maheshkhatikcareers@gmail.com</p>
+					<p><i class="fa-solid fa-phone"></i>+91-738-715-2880</p>
+					<div class="social-icon">
+						<a href="https://www.github.com/MaheshDataWizard/"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.x.com/mah28419"><i class="fa-brands fa-twitter-square"></i></a>
+						<a href="https://www.instagram.com/mrk_2880"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/mahesh-khatik-b37922204/"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<a href="Mahesh_Khatik.pdf" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>footer</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+	</body>
+</html>
