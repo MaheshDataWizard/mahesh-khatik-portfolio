@@ -42,4 +42,5 @@ const msg = document.getElementById("msg");
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
+      
   })
