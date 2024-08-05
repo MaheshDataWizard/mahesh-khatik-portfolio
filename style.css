@@ -295,6 +295,15 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .work-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+        gap: 20px;
+    }
+}
 /* ------------------------Contact----------------------------- */
 
 .contact-left{
