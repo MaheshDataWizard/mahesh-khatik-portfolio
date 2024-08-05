@@ -224,6 +224,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    min-height: 250px;
 }
 
 .work img{
@@ -295,15 +296,6 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-
-@media only screen and (max-width: 600px) {
-    .layer{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: min-content;
-        gap: 20px;
-    }
-}
 /* ------------------------Contact----------------------------- */
 
 .contact-left{
