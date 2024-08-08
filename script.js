@@ -1,3 +1,20 @@
+
+
+// -------------------------- hero ---------------------
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var typed = new Typed(".typed",{
+        strings:["design", "development", "data analysis", "machine learning", "deep learning", "artificial intelligence"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+
+    })
+});
+
+
 var tablinks=document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
