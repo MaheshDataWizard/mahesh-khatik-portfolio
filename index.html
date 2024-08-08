@@ -10,6 +10,7 @@
 		<title>Mahesh Khatik</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/a521d841e1.js" crossorigin="anonymous"></script>
+		<link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	</head>
 	<body>
 
@@ -40,49 +41,134 @@
 
 	<!-- -----------------------------------About---------------------------- -->
 
+
 	<div id="about">
 		<div class="container">
-			<h1 class="sub-title">About Me</h1>
+			<h1 class="sub-title">About</h1>
+			<p class="para-about">Highly motivated and dedicated B.Tech student in Artificial Intelligence and Data Science with a strong foundation in data
+				analysis, machine learning, deep learning, and full-stack development. Seeking an internship or job opportunity to apply
+				my skills and gain industry experience, while contributing to the success of the organization.</p>
+
 			<div class="row">
 				<div class="about-col-1">
-					<img src="./images/profile.jpg" alt="Profile Picture" >
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
 				</div>
-				<div class="about-col-2">
-					
-					<p>Highly motivated and dedicated B.Tech student in Artificial Intelligence and Data Science with a strong foundation in data
-						analysis, machine learning, deep learning, and full-stack development. Seeking an internship or job opportunity to apply
-						my skills and gain industry experience, while contributing to the success of the organization.</p>
-					
-					<div class="tab-title">
-						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-						<p class="tab-links" onclick="opentab('experiance')">Project</p>
-						<div class="tab-links" onclick="opentab('education')">Education</div>
-					</div>
 
-					<div class="tab-contents  active-tab" id="skills">
-						<ul>
-							<li><span>Full Stack Developer</span><br>Designing Websites</li>
-							<li><span>Data Analytics</span><br>Data Cleaning, Gathering Insights, Visualization</li>
-							<li><span>Flask</span><br>Model Deployment</li>
-						</ul>
-					</div>
-					<div class="tab-contents" id="experiance">
-						<ul>
-							<li><span>Twitter Sentiment Analysis</span><br>Python, Data Analysis, Machine Learning, Flask</li>
-							<li><span>Tribute Page </span><br>HTML, CSS</li>
-							<li><span>Portfolio Website</span><br>HTML, CSS, JavaScript</li>
-						</ul>
-					</div>
-					<div class="tab-contents " id="education">
-						<ul>
-							<li><span>SSC</span><br>Jijamata Madhyamic Vidyalay, Bhenda <br> Percentage  77.60% <br>Completion: 2018</li>
-							<li><span>HSC</span><br>Jijamata Junior College, Bhenda<br> Percentage: 60% <br>Completion: 2020</li>
-							<li><span>Diploma in Computer Engineering</span><br>Pimpri Chinchwad Polytechnic, Pune<br> Percentage: 78.29% <br>Completion: 2022</li>
-							<li><span>B.Tech in Artificial Intelligence and Data Science</span><br>Fabtech College of Engineering and Research, Sangole<br> Pursuing</li>
-						</ul>
-					</div>
+				<div class="about-col-2">
+					<p class="tab-links" onclick="opentab('projects')">Project</p>
+				</div>
+
+				<div class="about-col-3">
+					<div class="tab-links" onclick="opentab('education')">Education</div>
 				</div>
 			</div>
+
+		
+				<div class="tab-contents active-tab" id="skills">
+					<div class="container swiper">
+						<div class="slider-wrapper">
+							<div class="card-list swiper-wrapper">
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Front-End</h2>
+									<p class="title-description">Proficient in HTML, CSS, JavaScript, Bootstrap, React, and jQuery. Skilled in developing responsive and dynamic web applications with semantic markup, advanced styling, and optimizing performance for smooth user experiences.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Backend</h2>
+									<p class="title-description">Experienced in Java and SQL, with a strong ability to develop robust backend systems, manage databases, write efficient queries, and seamlessly integrate backend logic with front-end applications.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Data Analytics</h2>
+									<p class="title-description">Skilled in data analysis, proficient in extracting insights from datasets using statistical methods and visualization. Experienced in data cleansing, validation, and reporting for informed decision-making.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Machine Learning</h2>
+									<p class="title-description">Experienced in machine learning, with expertise in building models, feature engineering, and applying algorithms for predictive analytics. Skilled in using tools to derive actionable insights and enhance solutions.</p>
+								</div>								
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-slide-button swiper-button-prev"></div>
+							<div class="swiper-slide-button swiper-button-next"></div>
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
+					</div>
+				</div>
+				<div class="tab-contents" id="projects">
+					<div class="container swiper">
+						<div class="slider-wrapper">
+							<div class="card-list swiper-wrapper">
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Portfolio Website</h2>
+									<p class="title-description">Designed and developed a portfolio website to showcase my education, projects, and certifications. Utilized HTML, CSS, and JavaScript to create an interactive, visually appealing platform.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Calculator</h2>
+									<p class="title-description">Created a calculator using HTML, CSS, and JavaScript. Implemented arithmetic operations, clear/reset functionality, and a responsive design for a modern, user-friendly experience.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Twitter Sentiment Analysis</h2>
+									<p class="title-description">Analyzed tweets to determine sentiment (positive, negative, or neutral), providing insights into public opinion and trends on various topics or events using machine learning techniques.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Iris Flower Dataset <br> Analysis</h2>
+									<p class="title-description">Conducted statistical analysis and built predictive models using the Iris Flower Dataset to classify species based on morphological features like petal and sepal length and width.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Indian Election Data Analysis</h2>
+									<p class="title-description">Analyzed Indian election data to identify voting patterns, predict outcomes, and visualize trends using statistical methods and machine learning techniques.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Climate Change Data Analysis</h2>
+									<p class="title-description">Conducted climate change data analysis to identify trends, assess impacts, and model future scenarios using advanced statistical methods and predictive modeling techniques.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Unemployment Data Analysis</h2>
+									<p class="title-description">Analyzed unemployment data over time to identify trends, seasonal patterns, and economic factors influencing job market fluctuations, providing insights into employment dynamics.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Diabetes Prediction using ML</h2>
+									<p class="title-description">Implemented a machine learning model to predict diabetes, analyzing patient data to identify risk factors, enhance early detection, and improve healthcare outcomes.</p>
+								</div>
+								
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-slide-button swiper-button-prev"></div>
+							<div class="swiper-slide-button swiper-button-next"></div>
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
+					</div>
+				</div>
+				<div class="tab-contents" id="education">
+					<div class="container swiper">
+						<div class="slider-wrapper">
+							<div class="card-list swiper-wrapper">
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Diploma in Computer Engineering</h2>
+									<p class="title-description">Completed a diploma at Pimpri Chinchwad Polytechnic (Dec 2020 - Jun 2022), gaining skills in front-end and back-end technologies like HTML, CSS, JavaScript, and server-side scripting for web development.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">B.Tech in AI and Data Science</h2>
+									<p class="title-description">Pursuing a B.Tech in Artificial Intelligence and Data Science at Fabtech College of Engineering and Research (Nov 2022 - Jun 2025), focusing on Python, data analytics, machine learning, NLP, and model integration using Flask.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Training in Full-Stack Development</h2>
+									<p class="title-description">Alongside my B.Tech, I am training in Full Stack Development using Java at Technolearn, gaining hands-on experience with projects and learning from industry experts to enhance both front-end and back-end skills.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Certified in Data Science with Python</h2>
+									<p class="title-description">Earned a certificate in Master Data Science in Python from Great Learning, gaining foundational knowledge in data science, enhancing my understanding of key principles and techniques for data analysis.</p>
+								</div>
+								<div class="card-item swiper-slide">
+									<h2 class="title-name">Master Data Science in Python</h2>
+									<p class="title-description">Certified by Great Learning in Master Data Science in Python, I developed a strong foundation in data science, learning essential techniques for analyzing data and applying data-driven solutions.</p>
+								</div>								
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-slide-button swiper-button-prev"></div>
+							<div class="swiper-slide-button swiper-button-next"></div>
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
+					</div>
+				</div>
 		</div>
 	</div>
 
@@ -154,9 +240,8 @@
 	<div id="contact">
 		<div class="container">
 			<h1 class="sub-title">Contact Me</h1>
-			<div class="row"> 	
+			<div class="row1"> 	
 				<div class="contact-left">
-					
 					<p><i class="fa-regular fa-envelope"></i>maheshkhatikcareers@gmail.com</p>
 					<p><i class="fa-solid fa-phone"></i>+91-738-715-2880</p>
 					<div class="social-icon">
@@ -183,6 +268,7 @@
 		</div>
 	</div>
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="script.js"></script>
 	</body>
 </html>
