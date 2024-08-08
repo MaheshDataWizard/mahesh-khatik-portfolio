@@ -1,9 +1,4 @@
 
-
-// -------------------------- hero ---------------------
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed(".typed",{
         strings:["design", "development", "data analysis", "machine learning", "deep learning", "artificial intelligence"],
